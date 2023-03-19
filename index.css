@@ -1,0 +1,118 @@
+html{
+    background-color: #D1D5DB;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2rem auto;
+    background-color: #F3F4F6;
+    width: 500px;
+    height: 875px;
+    border-radius: 1%;
+}
+button{
+    margin: 0 .625rem;
+    padding: .75rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #F9FAFB;
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+button > img{
+    width: 2rem;
+    padding: .5rem;
+}
+#card .dog-img {
+    border-radius: 2%;
+    width: 97.5%;
+}
+#card {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-img-div{
+    padding-top: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.25rem;
+    max-width: 95%
+}
+.profile-img, .logo-img, .chat-img{
+    height: 100%;
+}
+.finished-top-text, .finished-bottom-text{
+    position: absolute;
+}
+.finished-top-text{
+    top: 5rem;
+}
+.finished-bottom-text{
+    top: 10rem;
+    font-size: 2rem;
+    left: 44%;
+}
+
+.finished-img{
+    width: 97.5%;
+    object-fit: cover;
+    height: 650px;
+    border-radius: 2%;
+}
+.dog-info {
+    position: absolute;
+    text-align: start;
+    font-size: 1.125rem;
+    line-height: .5rem;
+    color: white;
+    margin-bottom: .75rem; 
+    bottom: 1rem;
+    left: 1.5rem;
+    text-shadow: 2px 2px 3px #000000;
+}
+.dog-bio{
+    color: rgb(197, 197, 197);
+    
+}
+.actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem;
+}
+.like-div{
+    position: relative;
+}
+.like, .nope{
+    position: absolute;
+    left: 1rem;
+    top: 3rem;
+    transform: rotate(-30deg);
+    width: 45%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hidden{
+    display: none;
+}
+
+/* Interaction States */
+.profile-img:hover, .chat-img:hover{
+    height: 102%;
+}
+.logo-img:hover{
+    height: 102%;
+}
+
+.accept-button:hover, .accept-button:active{
+    background-color: #D1FAE5;
+    box-shadow: 0 10px 15px -3px rgba(0, 78, 39, 0.1), 0 4px 6px -2px rgba(0, 80, 40, 0.3);
+    
+}
+.reject-button:hover, .reject-button:active{
+    background-color: #FEE2E2;
+    box-shadow: 0 10px 15px -3px rgba(65, 0, 0, 0.1), 0 4px 6px -2px rgba(61, 0, 0, 0.3);
+}
